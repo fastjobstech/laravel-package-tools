@@ -7,35 +7,35 @@ use Spatie\LaravelPackageTools\Commands\InstallCommand;
 
 class Package
 {
-    public string $name;
+    public $name;
 
-    public array $configFileNames = [];
+    public $configFileNames = [];
 
-    public bool $hasViews = false;
+    public $hasViews = false;
 
-    public ?string $viewNamespace = null;
+    public $viewNamespace = null;
 
-    public bool $hasTranslations = false;
+    public $hasTranslations = false;
 
-    public bool $hasAssets = false;
+    public $hasAssets = false;
 
-    public bool $runsMigrations = false;
+    public $runsMigrations = false;
 
-    public array $migrationFileNames = [];
+    public $migrationFileNames = [];
 
-    public array $routeFileNames = [];
+    public $routeFileNames = [];
 
-    public array $commands = [];
+    public $commands = [];
 
-    public array $viewComponents = [];
+    public $viewComponents = [];
 
-    public array $sharedViewData = [];
+    public $sharedViewData = [];
 
-    public array $viewComposers = [];
+    public $viewComposers = [];
 
-    public string $basePath;
+    public $basePath;
 
-    public ?string $publishableProviderName = null;
+    public $publishableProviderName = null;
 
     public function name(string $name)
     {
